@@ -1,0 +1,5 @@
+4
+BRA1234 Toyota Corolla 2022 148000.00 Car Excellent condition
+BRA5678 Honda Civic 2020 250000.00 Car Like new
+BRA0987 Yamaha MT-07 2021 48000.00 Motorcycle Low mileage
+BRA3957 Mitsubishi Lancer 2016 62500.00 Car 0
