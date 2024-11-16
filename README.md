@@ -6,66 +6,42 @@ This project consists of a CRUD (Create, Read, Update, Delete) system to manage 
 
 - **`src/`**: Folder containing the project source code.
 
-  - **`main.c`**: Contains the `main` function, which initializes the program, reads vehicle data from the file, displays the main menu, accepts user input, and writes vehicle data back to the file.
+  - **`view/`**: Folder containing the view-related source code.
 
-- **`lib/`**: Folder containing project modules.
+    - **`main.c`**: Contains the `main` function, which initializes the program, reads vehicle data from the file, 
+    displays the main menu, accepts user input, and writes vehicle data back to the file.
 
-  - **`menu.h` and `menu.c`**: Define and implement functions related to the main menu of the program.
+  - **`model/`**: Folder containing the data structures and functions related to vehicle data management.
 
-  - **`crud.h` and `crud.c`**: Define and implement functions related to vehicle manipulation (add, edit, delete, etc.).
-
-- **`test/`**: Folder containing tests or files related to tests.
-
-  - **`vehicle.txt`**: General file used in tests.
-
-  - **`vehicle.txt`**: File with vehicle data used in tests.
-
-- **`app/`**: Folder containing the program executable.
-
-  - **`program`**: Executable generated after compilation.
+  - **`controller/`**: Folder containing the functions that handle the logic and operations for managing vehicle data, 
+  such as adding, editing, and deleting vehicles.
 
 ## Compilation and Execution
 
-To compile the project, use the following command:
+To compile and run the project, use the provided `make.sh` script.
 
-- ### On Linux:
+- ### On Linux and Windows (using Git Bash or similar):
 
-```bash
-gcc lib/*.c src/*.c -o app/program
-```
-
-To run the program:
+To compile and run the project:
 
 ```bash
-./app/program
-```
-
-- ### On Windows:
-
- ```bash
-gcc lib/*.c src/*.c -o app/program
-```
-
-To run the program:
-
-```bash
-cd app
-program
+./make.sh
 ```
 
 ## Features
 
 The program offers the following functionalities:
 
-1. List all vehicles.
-2. Search for a vehicle by plate.
-3. Add a new vehicle.
-4. Edit information of an existing vehicle.
-5. Delete a vehicle.
+1. Search for a vehicle by plate.
+2. Add a new vehicle.
+3. Edit information of an existing vehicle.
+4. Delete a vehicle.
+5. List all vehicles.
 
 ## Data File
 
-Vehicle data is stored in the `vehicle.txt` file. This file is read at the program's startup and updated at the end of the program's execution.
+Vehicle data is stored in the `vehicle.csv` file in data folder. This file is read at the program's startup and updated 
+at the end of the program's execution.
 
 ## Notes
 
